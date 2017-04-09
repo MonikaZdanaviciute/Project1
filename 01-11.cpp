@@ -9,8 +9,8 @@ int main()
 	int	a = 10;
 	cout <<	"kintamojo a reiksme "<< a << endl;//spausdinama a reiksme, siuo atveju 10
 	cout <<"kintamojo a adresas "<< &a << endl;/*spausdinamas kintamojo adresas kompiuteryje. 
-											   (atminties srities kompiuteryje, skirtos saugoti
-											   kintamajam, pirmojo baito adresas)*/
+	  (atminties srities kompiuteryje, skirtos saugoti
+	 kintamajam, pirmojo baito adresas)*/
 	system(	"pause");
 	return
 		0;
@@ -52,9 +52,9 @@ int main()
 	int *rodykle;/*deklaruojamas kintamasis rodykle,
 				 i kuri bus irasytas kintamojo "kintamasis" adresas.*/
 	rodykle = &kintamasis;//sioje vietoje kintamojo adresas irasomas i rodykle
-	cout << "Kintamojo reikšm÷ " << *rodykle << endl;/* atspausdinama reiksme kintamojo,
-													 i kurio adresa yra nukreipta rodykle.
-													 siuo atveju ekrane matysime 24 */
+	cout << "Kintamojo reikÅ¡mÃ· " << *rodykle << endl;/* atspausdinama reiksme kintamojo,
+							 i kurio adresa yra nukreipta rodykle.
+							siuo atveju ekrane matysime 24 */
 	system("pause");
 	return 0;
 }
@@ -74,9 +74,9 @@ int main()
 	int *rodykle;/*deklaruojamas kintamasis rodykle,
 				 i kuri bus irasytas kintamojo "kintamasis" adresas.*/
 	rodykle = &kintamasis;//sioje vietoje kintamojo adresas irasomas i rodykle
-	cout << "Kintamojo reikšm÷ " << rodykle << endl;/* atspausdinama ne kintamojo reiksme ,
-													o adresas, i kuri nukreipta rodykle.
-													Rodykle nukreipta i kintamojo "kintamasis" adresa */
+	cout << "Kintamojo reikÅ¡mÃ· " << rodykle << endl;/* atspausdinama ne kintamojo reiksme ,
+							o adresas, i kuri nukreipta rodykle.
+							Rodykle nukreipta i kintamojo "kintamasis" adresa */
 	system("pause");
 	return 0;
 }
@@ -94,16 +94,16 @@ int main()
 	int a = 24, *p;
 	p = &a;   // rodykle p rodo  i kintamojo a adres? 
 
-	cout << "Kintamojo a reikšm÷ " << a << endl;//spausdinama a reiksme (24)
+	cout << "Kintamojo a reikÅ¡mÃ· " << a << endl;//spausdinama a reiksme (24)
 	cout << "Kintamojo a adresas " << &a << endl;/* spausdinamas a adresas
-												 (kiekviename kompiuteryje tai yra skirtinga reiksme,
-												 gali kisti kiekviena karta paleidus programa*/
+							(kiekviename kompiuteryje tai yra skirtinga reiksme,
+							gali kisti kiekviena karta paleidus programa*/
 	cout << "----------------------------------\n\n"
 		;
 
-	cout << "rodykles  p reikšm÷ " << p << endl;//spausdina ta pati a adresa, tik jau pasitelkdamas p (rodykle)
+	cout << "rodykles  p reikÅ¡mÃ· " << p << endl;//spausdina ta pati a adresa, tik jau pasitelkdamas p (rodykle)
 	cout << "rodykles  p adresas " << &p << endl;//cia atspausdinamas pacios rodykles p adresas
-	cout << "Rodykles *p rodomas turinys " << *p << endl;// spausdinama reiksme kintamojo, i kuri rodo rodykle p, tai yra a reiksme, kuri lygi 24
+	cout << "Rodykles *p rodomas turinys " << *p << endl;// spausdinama reiksme kintamojo, i kuri rodo rodykle p,tai yra a reiksme, kuri lygi 24
 	system("pause");
 	return	0;
 }
@@ -146,17 +146,17 @@ int main()
  todel atspausdinama nezinoma reiksme
  */
 	int a;// kintamas a  - sveikasis sk. 
-	int *p;// kintamasis p - rodykl÷ 
+	int *p;// kintamasis p - rodyklÃ· 
 	a = 99;
 	p = &a;
 
 	*p++;//rodykles rodomas adresas padidinamas  
 	cout << "Rodykles *p rodomas turinys " << *p << endl;/*cia turetu atsispausdinti tai,
-														 kas yra yra naujajame adrese,
-														 siek tiek toliau nei a kintamasis.
-														 kadangi siuo atveju ten nieko nera,
-														 kompiuteris spausdina nesamoninga reiksme*/
-	cout << "Kintamojo a reikšm÷ " << a << endl;//tuo tarpu a reiksme nepakinta, atspausdinama 99
+							 kas yra yra naujajame adrese,
+							 siek tiek toliau nei a kintamasis.
+						         kadangi siuo atveju ten nieko nera,
+							kompiuteris spausdina nesamoninga reiksme*/
+	cout << "Kintamojo a reikÅ¡mÃ· " << a << endl;//tuo tarpu a reiksme nepakinta, atspausdinama 99
 	system("pause");
 	return 0;
 }
